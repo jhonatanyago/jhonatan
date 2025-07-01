@@ -4,78 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jhon Açaiteria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <header>
-    <h1>Jhon Açaiteria</h1>
+    <div class="container">
+      <h1>Jhon Açaiteria</h1>
+    </div>
   </header>
 
   <main>
-    <section id="historia" class="section">
+    <section class="intro container">
       <h2>Nossa História</h2>
       <p>
-        Fundada em 2012, a Jhon Açaiteria nasceu do sonho de levar o verdadeiro sabor do açaí para a cidade. Com receitas artesanais e ingredientes selecionados, conquistamos clientes fiéis que apreciam qualidade e frescor em cada porção.
-      </p>
-      <p>
-        Ao longo dos anos, ampliamos nosso cardápio incluindo sorvetes artesanais e combos exclusivos, sempre com o compromisso de oferecer uma experiência deliciosa e saudável.
+        Fundada em 2012, a Jhon Açaiteria se tornou referência na cidade por trazer o verdadeiro sabor do açaí amazônico com qualidade e frescor. Nosso compromisso é entregar experiências deliciosas e saudáveis para toda família.
       </p>
     </section>
 
-    <section id="cardapio" class="section">
-      <h2>Nosso Cardápio</h2>
-
+    <section class="cardapio container">
+      <h2>Cardápio Variado</h2>
       <div class="cardapio-grid">
-
-        <article class="item-cardapio">
+        
+        <article class="cardapio-item">
           <img src="https://images.unsplash.com/photo-1570988243382-191a309f9d8e?auto=format&fit=crop&w=400&q=60" alt="Açaí Tradicional" />
-          <h3>Açaí Tradicional 300ml</h3>
-          <p>Açaí puro com banana e granola crocante.</p>
-          <span class="preco">R$ 14,00</span>
+          <div class="info">
+            <h3>Açaí Tradicional 300ml</h3>
+            <p>Açaí puro com banana e granola crocante.</p>
+            <span class="preco">R$ 14,00</span>
+          </div>
         </article>
 
-        <article class="item-cardapio">
+        <article class="cardapio-item">
           <img src="https://images.unsplash.com/photo-1561043433-aaf687c4cf4b?auto=format&fit=crop&w=400&q=60" alt="Açaí Especial" />
-          <h3>Açaí Especial 500ml</h3>
-          <p>Açaí com leite condensado, morango e castanhas.</p>
-          <span class="preco">R$ 22,00</span>
+          <div class="info">
+            <h3>Açaí Especial 500ml</h3>
+            <p>Açaí com leite condensado, morango e castanhas.</p>
+            <span class="preco">R$ 22,00</span>
+          </div>
         </article>
 
-        <article class="item-cardapio">
+        <article class="cardapio-item">
           <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=60" alt="Sorvete de Creme" />
-          <h3>Sorvete de Creme 200ml</h3>
-          <p>Sabor clássico, super cremoso e refrescante.</p>
-          <span class="preco">R$ 12,00</span>
+          <div class="info">
+            <h3>Sorvete de Creme 200ml</h3>
+            <p>Sabor clássico, super cremoso e refrescante.</p>
+            <span class="preco">R$ 12,00</span>
+          </div>
         </article>
 
-        <article class="item-cardapio">
+        <article class="cardapio-item">
           <img src="https://images.unsplash.com/photo-1544476915-ed1370594142?auto=format&fit=crop&w=400&q=60" alt="Sorvete de Chocolate" />
-          <h3>Sorvete de Chocolate 200ml</h3>
-          <p>Chocolate belga intenso com textura aveludada.</p>
-          <span class="preco">R$ 15,00</span>
+          <div class="info">
+            <h3>Sorvete de Chocolate 200ml</h3>
+            <p>Chocolate belga intenso com textura aveludada.</p>
+            <span class="preco">R$ 15,00</span>
+          </div>
         </article>
 
-        <article class="item-cardapio">
+        <article class="cardapio-item">
           <img src="https://images.unsplash.com/photo-1541698444083-023c97d3f4b6?auto=format&fit=crop&w=400&q=60" alt="Açaí com Guaraná" />
-          <h3>Açaí com Guaraná 300ml</h3>
-          <p>Refrescante e energético, combinação perfeita.</p>
-          <span class="preco">R$ 16,00</span>
+          <div class="info">
+            <h3>Açaí com Guaraná 300ml</h3>
+            <p>Refrescante e energético, combinação perfeita.</p>
+            <span class="preco">R$ 16,00</span>
+          </div>
         </article>
 
-        <article class="item-cardapio">
+        <article class="cardapio-item">
           <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=60" alt="Sorvete Vegano Manga" />
-          <h3>Sorvete Vegano de Manga 200ml</h3>
-          <p>Natural e refrescante, feito com frutas frescas.</p>
-          <span class="preco">R$ 17,00</span>
+          <div class="info">
+            <h3>Sorvete Vegano de Manga 200ml</h3>
+            <p>Natural e refrescante, feito com frutas frescas.</p>
+            <span class="preco">R$ 17,00</span>
+          </div>
         </article>
 
-        <article class="item-cardapio">
+        <article class="cardapio-item combo">
           <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=400&q=60" alt="Combo Família" />
-          <h3>Combo Família</h3>
-          <p>Dois açaís 500ml + 2 sorvetes 200ml + toppings sortidos.</p>
-          <span class="preco">R$ 60,00</span>
+          <div class="info">
+            <h3>Combo Família</h3>
+            <p>Dois açaís 500ml + 2 sorvetes 200ml + toppings sortidos.</p>
+            <span class="preco">R$ 60,00</span>
+          </div>
         </article>
 
       </div>
@@ -83,9 +95,10 @@
   </main>
 
   <footer>
-    <p>© 2025 Jhon Açaiteria - Sabor e qualidade em cada porção.</p>
+    <div class="container">
+      <p>© 2025 Jhon Açaiteria — Sabor, Qualidade e Tradição</p>
+    </div>
   </footer>
 
 </body>
 </html>
-

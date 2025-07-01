@@ -1,187 +1,125 @@
-/* Fonte importada no HTML: Montserrat e Poppins */
-
-/* Reset */
+/* Resetando padrões do navegador */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #f8f9fb;
-  font-family: 'Poppins', sans-serif;
-  color: #4a3f55;
-  line-height: 1.6;
-  font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* Cabeçalho */
 header {
-  background: #6a3e8e; /* roxo escuro */
-  padding: 30px 0;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(106, 62, 142, 0.5);
-  user-select: none;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+    background-color: #333;
+    padding: 15px 0;
 }
 
-header h1 {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
-/* Main */
-main {
-  margin-top: 50px;
-  margin-bottom: 60px;
+header nav ul li {
+    margin: 0 20px;
 }
 
-/* Seção de introdução/história */
-.intro {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(106, 62, 142, 0.1);
-  margin-bottom: 60px;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.intro h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #6a3e8e;
-  font-weight: 700;
-  font-size: 2.8rem;
-  margin-bottom: 22px;
-  border-bottom: 3px solid #a078be;
-  padding-bottom: 10px;
-  letter-spacing: 2px;
+section {
+    padding: 40px 0;
 }
 
-.intro p {
-  font-size: 1.15rem;
-  color: #5b5168;
-  max-width: 850px;
-  margin: 0 auto;
-  text-align: justify;
-  line-height: 1.75;
+h1, h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #444;
 }
 
-/* Cardápio */
-.cardapio {
-  margin-bottom: 80px;
+#home {
+    background-color: #ffcc00;
+    color: white;
+    text-align: center;
 }
 
-.cardapio h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #6a3e8e;
-  font-weight: 700;
-  font-size: 2.8rem;
-  margin-bottom: 40px;
-  border-bottom: 3px solid #a078be;
-  padding-bottom: 10px;
-  letter-spacing: 2px;
-  text-align: center;
+#home p {
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
-.cardapio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 28px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Item do cardápio */
-.cardapio-item {
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 18px 40px rgba(106, 62, 142, 0.1);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
+#menu .menu-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-.cardapio-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 55px rgba(106, 62, 142, 0.25);
+#menu .menu-items .item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cardapio-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 5px solid #a078be;
-  transition: transform 0.3s ease;
+#menu .menu-items .item img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-.cardapio-item:hover img {
-  transform: scale(1.1);
+#localizacao iframe {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
-.info {
-  padding: 22px 24px 30px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.cardapio-item h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #6a3e8e;
-  margin-bottom: 12px;
+#contato form input,
+#contato form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.cardapio-item p {
-  font-size: 1rem;
-  color: #6b5f7c;
-  flex-grow: 1;
-  line-height: 1.5;
-  margin-bottom: 18px;
+#contato form button {
+    background-color: #ffcc00;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.preco {
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #7d4b94;
-  align-self: flex-end;
+#contato form button:hover {
+    background-color: #ff9900;
 }
 
-/* Combo destaque */
-.cardapio-item.combo {
-  border: 3px solid #7d4b94;
-  box-shadow: 0 25px 60px rgba(125, 75, 148, 0.4);
-}
-
-/* Footer */
 footer {
-  background: #6a3e8e;
-  color: white;
-  text-align: center;
-  padding: 22px 0;
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  user-select: none;
-  box-shadow: 0 -5px 15px rgba(106, 62, 142, 0.6);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
-
-/* Responsividade */
-@media (max-width: 700px)
-
-

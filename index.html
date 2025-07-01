@@ -1,104 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jhon Açaiteria</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Casa de Jhon</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Menu de navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <div class="container">
-      <h1>Jhon Açaiteria</h1>
-    </div>
-  </header>
-
-  <main>
-    <section class="intro container">
-      <h2>Nossa História</h2>
-      <p>
-        Fundada em 2012, a Jhon Açaiteria se tornou referência na cidade por trazer o verdadeiro sabor do açaí amazônico com qualidade e frescor. Nosso compromisso é entregar experiências deliciosas e saudáveis para toda família.
-      </p>
+    <!-- Seção Home -->
+    <section id="home">
+        <div class="container">
+            <h1>A Casa de Jhon</h1>
+            <p>Um lugar onde a comida é feita com amor e tradição. Desde 1985, servindo pratos deliciosos e aconchegantes para você e sua família.</p>
+        </div>
     </section>
 
-    <section class="cardapio container">
-      <h2>Cardápio Variado</h2>
-      <div class="cardapio-grid">
-        
-        <article class="cardapio-item">
-          <img src="https://images.unsplash.com/photo-1570988243382-191a309f9d8e?auto=format&fit=crop&w=400&q=60" alt="Açaí Tradicional" />
-          <div class="info">
-            <h3>Açaí Tradicional 300ml</h3>
-            <p>Açaí puro com banana e granola crocante.</p>
-            <span class="preco">R$ 14,00</span>
-          </div>
-        </article>
-
-        <article class="cardapio-item">
-          <img src="https://images.unsplash.com/photo-1561043433-aaf687c4cf4b?auto=format&fit=crop&w=400&q=60" alt="Açaí Especial" />
-          <div class="info">
-            <h3>Açaí Especial 500ml</h3>
-            <p>Açaí com leite condensado, morango e castanhas.</p>
-            <span class="preco">R$ 22,00</span>
-          </div>
-        </article>
-
-        <article class="cardapio-item">
-          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=60" alt="Sorvete de Creme" />
-          <div class="info">
-            <h3>Sorvete de Creme 200ml</h3>
-            <p>Sabor clássico, super cremoso e refrescante.</p>
-            <span class="preco">R$ 12,00</span>
-          </div>
-        </article>
-
-        <article class="cardapio-item">
-          <img src="https://images.unsplash.com/photo-1544476915-ed1370594142?auto=format&fit=crop&w=400&q=60" alt="Sorvete de Chocolate" />
-          <div class="info">
-            <h3>Sorvete de Chocolate 200ml</h3>
-            <p>Chocolate belga intenso com textura aveludada.</p>
-            <span class="preco">R$ 15,00</span>
-          </div>
-        </article>
-
-        <article class="cardapio-item">
-          <img src="https://images.unsplash.com/photo-1541698444083-023c97d3f4b6?auto=format&fit=crop&w=400&q=60" alt="Açaí com Guaraná" />
-          <div class="info">
-            <h3>Açaí com Guaraná 300ml</h3>
-            <p>Refrescante e energético, combinação perfeita.</p>
-            <span class="preco">R$ 16,00</span>
-          </div>
-        </article>
-
-        <article class="cardapio-item">
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=60" alt="Sorvete Vegano Manga" />
-          <div class="info">
-            <h3>Sorvete Vegano de Manga 200ml</h3>
-            <p>Natural e refrescante, feito com frutas frescas.</p>
-            <span class="preco">R$ 17,00</span>
-          </div>
-        </article>
-
-        <article class="cardapio-item combo">
-          <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=400&q=60" alt="Combo Família" />
-          <div class="info">
-            <h3>Combo Família</h3>
-            <p>Dois açaís 500ml + 2 sorvetes 200ml + toppings sortidos.</p>
-            <span class="preco">R$ 60,00</span>
-          </div>
-        </article>
-
-      </div>
+    <!-- Seção Menu -->
+    <section id="menu">
+        <div class="container">
+            <h2>Nosso Menu</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="prato1.jpg" alt="Prato 1">
+                    <h3>Feijoada Completa</h3>
+                    <p>Uma verdadeira iguaria brasileira, preparada com todo carinho. Acompanhada de arroz, farofa e laranja.</p>
+                </div>
+                <div class="item">
+                    <img src="prato2.jpg" alt="Prato 2">
+                    <h3>Pizza Margherita</h3>
+                    <p>Uma pizza clássica, com molho de tomate fresco, manjericão e mozzarella de búfala.</p>
+                </div>
+                <div class="item">
+                    <img src="prato3.jpg" alt="Prato 3">
+                    <h3>Spaghetti à Carbonara</h3>
+                    <p>Espaguete com molho cremoso de ovos, queijo parmesão, bacon e pimenta do reino.</p>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Jhon Açaiteria — Sabor, Qualidade e Tradição</p>
-    </div>
-  </footer>
+    <!-- Seção Localização -->
+    <section id="localizacao">
+        <div class="container">
+            <h2>Onde Estamos</h2>
+            <p>Endereço: Rua do Sabor, 123 - Bairro Aconchego, Cidade XYZ</p>
+            <div id="mapa">
+                <!-- Aqui você pode inserir o link para o Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7809365676395!2d-46.575604684466595!3d-23.564224968159527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50bbf9bbfd5d%3A0x634e24685ef8e53f!2sRua%20do%20Sabor%2C%20123%20-%20Bairro%20Aconchego%2C%20Cidade%20XYZ!5e0!3m2!1spt-BR!2sbr!4v1620230506973!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
 
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 A Casa de Jhon. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

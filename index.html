@@ -1,97 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" >
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jhon Açaiteria - Cardápio Digital</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+
   <header>
-    <div class="container">
+    <div class="container header-container">
       <h1>Jhon Açaiteria</h1>
-      <p class="slogan">O melhor açaí e sorvetes da região</p>
+      <nav>
+        <ul>
+          <li><a href="#sobre-nos">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#contato" class="btn">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>O melhor açaí e sorvetes artesanais da região</h2>
+      <p>Venha saborear nossos produtos feitos com ingredientes selecionados e muita paixão.</p>
+      <a href="#cardapio" class="btn btn-primary">Veja nosso Cardápio</a>
+    </div>
+  </section>
+
   <main class="container">
-    <section id="sobre-nos">
-      <h2>Sobre Nós</h2>
-      <p>
+
+    <section id="sobre-nos" class="section">
+      <h2 class="section-title">Sobre Nós</h2>
+      <p class="section-text">
         Fundada em 2010, a Jhon Açaiteria é referência em qualidade e sabor, oferecendo açaí e sorvetes artesanais preparados com ingredientes selecionados. Nossa missão é levar frescor e alegria em cada porção.
       </p>
-    </section>
-
-    <section id="cardapio">
-      <h2>Cardápio</h2>
-
-      <div class="cardapio-categoria">
-        <h3>Açaí</h3>
-        <ul>
-          <li>
-            <span class="item-nome">Açaí Tradicional 300ml</span>
-            <span class="item-preco">R$ 12,00</span>
-          </li>
-          <li>
-            <span class="item-nome">Açaí com Granola e Banana 400ml</span>
-            <span class="item-preco">R$ 18,00</span>
-          </li>
-          <li>
-            <span class="item-nome">Açaí Especial Jhon 500ml</span>
-            <span class="item-preco">R$ 22,00</span>
-          </li>
-          <li>
-            <span class="item-nome">Açaí com Guaraná 300ml</span>
-            <span class="item-preco">R$ 14,00</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="cardapio-categoria">
-        <h3>Sorvetes</h3>
-        <ul>
-          <li>
-            <span class="item-nome">Sorvete de Creme 200ml</span>
-            <span class="item-preco">R$ 10,00</span>
-          </li>
-          <li>
-            <span class="item-nome">Sorvete de Chocolate Belga 200ml</span>
-            <span class="item-preco">R$ 13,00</span>
-          </li>
-          <li>
-            <span class="item-nome">Sorvete Vegano de Manga 200ml</span>
-            <span class="item-preco">R$ 15,00</span>
-          </li>
-          <li>
-            <span class="item-nome">Sorvete de Morango 200ml</span>
-            <span class="item-preco">R$ 12,00</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="localizacao">
-      <h2>Nosso Local</h2>
-      <p>Av. das Palmeiras, 1234 - Centro, Cidade Exemplo - SP</p>
-      <div class="mapa">
-        <!-- Google Maps Embed -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.018774047857!2d-46.65559468448057!3d-23.55835726868226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bd448795c1%3A0xb7a924563fc8d573!2sAv.%20Paulista%2C%20São%20Paulo%20-%20SP%2C%2001310-100%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1678543204390!5m2!1spt-BR!2sus"
-          width="100%"
-          height="300"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Jhon Açaiteria - Todos os direitos reservados</p>
-  </footer>
-</body>
-</html>
+      <img src="https://images.unsplash.com/pho

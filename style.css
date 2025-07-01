@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f8f1e4;
+  color: #4b2e05;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #7d3c98;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-family: 'Arial Black', Arial, sans-serif;
+  text-shadow: 1px 1px 3px #d6a4e0;
+}
+
+header p {
+  font-style: italic;
+  color: #a974bc;
+  font-size: 1.2rem;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(125, 60, 152, 0.2);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #7d3c98;
+  padding-bottom: 8px;
+  color: #6a2c91;
+}
+
+/* História da lanchonete */
+#historia p {
+  font-size: 1.1rem;
+  color: #4b2e05;
+  text-align: justify;
+}
+
+/* Cardápio */
+.cardapio-lista {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.cardapio-item {
+  background: #f0e8f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(125, 60, 152, 0.2);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.cardapio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(125, 60, 152, 0.35);
+}
+
+.cardapio-item h3 {
+  color: #7d3c98;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.cardapio-item p {
+  font-size: 1rem;
+  color: #4b2e05;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7d3c98;
+  margin-top: 50px;
+  font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  section {
+    padding: 20px 15px;
+  }
+  .cardapio-lista {
+    grid-template-columns: 1fr;
+  }
+}
